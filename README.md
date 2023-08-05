@@ -25,3 +25,5 @@ curl -sSL https://raw.githubusercontent.com/vmstan/gs-install/main/gs-install.sh
 ```
 
 In my situation, I was only able to configure `gravity-sync` on my first pihole instance (primary), the second one errored out indicating a permission error in the /tmp directory. I was able to perform a `gravity-sync push` command and see my local DNS settings replicated in my secondary pihole instance. After this, I ran `gravity-sync auto` and I was able to demonstrate that my configurations were being pushed automatically on a regular basis. 
+
+test
