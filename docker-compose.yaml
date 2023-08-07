@@ -4,13 +4,13 @@ version: "3"
 services:
   pihole:
     container_name: pihole
-    image: pihole/pihole:2023.03.1
+    image: pihole/pihole:2023.05.2
     ports:
       - "53:53/tcp"
       - "53:53/udp"
       # - "67:67/udp" # this is for DHCP
-      - "80:80/tcp"
-      - "443:443" # I'll be terminating TLS elsewhere
+      - "8080:80/tcp"
+      - "8443:443" # I'll be terminating TLS elsewhere
     environment:
       TZ: 'America/Denver'
       # WEBPASSWORD: 'set a secure password here or it will be random'
